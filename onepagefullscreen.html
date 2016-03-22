@@ -28,14 +28,28 @@
 	<div class='uk-width-1-1 uk-position-z-index' data-uk-sticky="{clsactive:'uk-navbar-attached', top:-40, animation:'uk-animation-slide-top'}">
 		<div class='uk-block uk-block-secondary uk-contrast  uk-visible-small uk-padding-remove'>
 			<div class='uk-grid'>
-				<div class='uk-width-3-4'>
-					<img src='images/logo.png' alt='英国熊猫眼网站设计' class='uk-margin-top uk-margin-bottom uk-margin-left uk-margin-right' style='height:40px;'>
+				<div class='uk-width-4-6 uk-margin-top uk-margin-bottom uk-margin-left uk-text-bold' style='line-height:40px;font-size:1.5rem;'>
+					<!--img src='images/logo.png' alt='英国熊猫眼网站设计' class='uk-margin-top uk-margin-bottom uk-margin-left uk-margin-right' style='height:40px;'-->熊猫眼网络科技
 				</div>
-				<div class='uk-width-1-4 uk-margin-top uk-margin-bottom '>
-					<a class='uk-icon-phone uk-text-bold uk-text-primary uk-icon-medium uk-icon-bold uk-icon-button' style='line-height:40px;'></a>
+
+				<div class='uk-width-1-4 uk-margin-top uk-margin-bottom uk-text-right' id='toggle'>
+					<a class='uk-icon-list uk-text-contrast uk-icon-bold' style='line-height:40px;font-size:1.4rem;'></a>
 				</div>
 			</div>
+
+
+			<div class='uk-width-1-1 uk-text-center' id='nav_small' style='display:none;'>
+				<hr class='uk-panel-divider uk-margin-top-remove uk-margin-bottom'></hr>
+
+				<ul class='uk-nav' data-uk-scrollspy-nav="{closest: 'li', smoothscroll:{offset:20}}" > 
+					<li > <a href='#index_small'  > <span class="uk-icon-home uk-active uk-text-bold uk-text-contrast"  >首页 </span></a></li>
+					<li > <a href='#business' > <span class='uk-icon-internet-explorer uk-text-bold uk-text-contrast' > 业务 </span></a></li>
+					<li > <a href='#portfolios' > <span  class='uk-icon-newspaper-o  uk-text-bold uk-text-contrast'> 案列  </span></a> </li>
+					<li > <a href='#contact_us' > <span  class='uk-icon-phone  uk-text-bold uk-text-contrast'>联系 </span></a></li>
+				</ul>
+			</div>
 		</div>
+
 
 		<div class='uk-margin-top-remove' >
 			<div class='uk-hidden-small uk-block uk-block-muted uk-padding-remove' >
@@ -44,10 +58,29 @@
 						<span class='uk-margin-left uk-text-bold' style='height:80px; line-height:80px;'>熊猫眼网络科技</span>	
 					</a>
 					<ul class='uk-navbar-nav uk-navbar-flip uk-margin-right' data-uk-scrollspy-nav="{closest: 'li', smoothscroll:{offset:20}}" style='height:80px; line-height:80px;'> 
-						<li style='height:80px; line-height:80px;'> <a href='#index'  style='height:80px; line-height:80px;'> <span class="uk-icon-home uk-active uk-text-large"  style='height:80px; line-height:80px;'>首页 </span></a></li>
-						<li style='height:80px; line-height:80px;'> <a href='#business' style='height:80px; line-height:80px;'> <span class='uk-icon-internet-explorer' style='height:80px; line-height:80px;'> 业务 </span></a></li>
-						<li  style='height:80px; line-height:80px;'> <a href='#portfolios' style='height:80px; line-height:80px;'> <span  class='uk-icon-newspaper-o'> 案列  </span></a> </li>
-						<li style='height:80px; line-height:80px;'> <a href='#contact_us' style='height:80px; line-height:80px;'> <span  class='uk-icon-phone'>联系 </span></a></li>
+						<li style='height:80px; line-height:80px;'> 
+							<a href='#index'  style='height:80px; line-height:80px;'> 
+								<span class="uk-icon-home uk-active"  style='height:80px; line-height:80px;font-size:1.2rem;' >首页 </span>
+							</a>
+						</li>
+
+						<li style='height:80px; line-height:80px;'> 
+							<a href='#business' style='height:80px; line-height:80px;'> 
+								<span class='uk-icon-internet-explorer' style='height:80px; line-height:80px;font-size:1.2rem;'> 业务 </span>
+							</a>
+						</li>
+
+						<li  style='height:80px; line-height:80px;'> 
+							<a href='#portfolios' style='height:80px; line-height:80px;font-size:1.2rem;'> 
+								<span  class='uk-icon-newspaper-o'> 案列  </span>
+							</a> 
+						</li>
+
+						<li style='height:80px; line-height:80px;'> 
+							<a href='#contact_us' style='height:80px; line-height:80px;font-size:1.2rem;'> 
+								<span  class='uk-icon-phone'>联系 </span>
+							</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
@@ -55,7 +88,7 @@
 	</div>
 
 	<!--banner in big screen --> 
-	<div class="uk-margin uk-margin-top-remove uk-margin-bottom-remove" data-uk-slideshow="" id='index'>
+	<div class="uk-margin uk-margin-top-remove uk-margin-bottom-remove uk-hidden-small" data-uk-slideshow="" id='index'>
         <div class="uk-slidenav-position">
             <ul class="uk-slideshow uk-overlay-active uk-slideshow-fullscreen " style="height: 470px;" data-uk-slideshow="{autoplay:true,kenburns:true, duration:500}" >
                 <li aria-hidden="true" class="" style="animation-duration: 500ms; height: 470px;"><div class="uk-cover-background uk-position-cover" style="background-image: url(&quot;images/banner_1.jpg&quot;);"></div>
@@ -91,7 +124,7 @@
     </div>
 
     <!-- parallax in small screen -->
-	<div class="uk-width-1-1 uk-margin-large-bottom uk-text-contrast uk-text-center uk-flex uk-flex-center uk-flex-middle uk-slideshow-fullscreen uk-visible-small" data-uk-parallax="{bg: -400}" style="height:400px;background-image: url(&quot;images/wallpaper1_2_h800.jpg&quot;); background-repeat: no-repeat;background-size:1600px 800px;background-position:50% -200px;" id='index'>
+	<div class="uk-width-1-1 uk-margin-large-bottom uk-text-contrast uk-text-center uk-flex uk-flex-center uk-flex-middle uk-slideshow-fullscreen uk-visible-small" data-uk-parallax="{bg: -400}" style="height:400px;background-image: url(&quot;images/wallpaper1_2_h800.jpg&quot;); background-repeat: no-repeat;background-size:1600px 800px;background-position:50% -200px;" id='index' id='index_small'>
         <div class="uk-width-medium-1-2" data-uk-parallax="{opacity: '0,0.9', scale: '0,1', viewport: '0.8', bg:-200, x: '-800,100'}" style="transform: scale(0.8832); opacity: 0.8832;">
             <h1 class="uk-text-contrast">Heading</h1>
             <p class="uk-text-large">This text is animated until it reaches the middle of the viewport.</p>
@@ -302,11 +335,21 @@
 
 
 	<div class='uk-block uk-text-center  uk-text-muted uk-block-default' style='padding:20px 0px 20px 0px;background:#000000;'>
-		<span class='uk-text-bold '>Copyright © 2016 英国熊猫眼网络科技<br/> <span class='uk-text-small'> www.epandaeye.com</span></span>
+		<span class='uk-text-bold uk-text-contrast '>Copyright © 2016 英国熊猫眼网络科技<br/> <span class='uk-text-small'> www.epandaeye.com</span></span>
 	</div>
 
-		<!--div class='uk-width-1-1 uk-text-center uk-margin-top uk-margin-bottom'>
-			<a href='#' class='uk-icon-angle-double-up uk-text-warning' data-uk-smooth-scroll=""></a>
-		</div-->
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#toggle").click(function(){
+    	if($('#nav_small').css('display') == 'none'){
+        $("#nav_small").show();
+    } else {
+        $("#nav_small").hide();    	
+    }
+    });
+});
+
+</script>
+
 </body>
 </html>
